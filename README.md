@@ -1,37 +1,5 @@
-----
 
-## Setting up your font
-
-* **New repositories.** Hit the green button above ("Use this template") to create your own repository. Please note that a Github Action job will be executed once you've created the repository which will populate the readme. This may take a few minutes. Please wait for this job to complete before pulling the repo to your local system.*
-
-* **Updating a repository.** To update your font repository to bring in the latest best-practices from the Google Fonts Project Template, run `make update-project-template` from the command line.
-
-* Replace the font sources in the `sources` directory with your own font sources. These sources may be either in Glyphs format or UFO/Designspace formats.\
-\
-Unlike many open source distributors, Google Fonts is **curated**. Fonts shipped to the platform have to match the [Google Fonts Specifications](https://github.com/googlefonts/gf-docs/tree/main/Spec). Please read them carefully.\
-\
-*(The sample font provided in this template is [Rubik](https://github.com/googlefonts/rubik/) by Philipp Hubert, Sebastian Fischer, and contributors.)*
-
-* Then reference the sources in the file `sources/config.yaml`, as well as making any other changes you would like to make based on the instructions in the [Google Fonts Builder documentation](https://github.com/googlefonts/gftools/blob/main/Lib/gftools/builder/__init__.py).
-
-
-* Add yourself to the `AUTHORS.txt` and `CONTRIBUTORS.txt` files.
-
-* Update the first line of the OFL.txt (year and project name). Update also the Copyright string in the sources, it has to be the same as the OFL.txt. The `.glyphs` file in this repo gives you required base charset and font info.
-
-* Finally, add and commit any files you have modified (i.e. `README.md`, `AUTHORS.txt`, `CONTRIBUTORS.txt`, the font sources, and `sources/config.yaml`) to git, then push to GitHub. Please be aware that Github Actions may take a few minutes to build your font family. It is worthwhile inspecting the progress in the "Actions" tab.
-
-* If Github Actions has successfully built the family, you will find the font binaries in the Actions tab. The official Github Actions documentation provides further [information](https://docs.github.com/en/actions/managing-workflow-runs/downloading-workflow-artifacts).
-
-* Once you are happy with your font, add promotional assets in the documentation directory. Make it different from the pic you use in this README. You can get inspired by existing tweet @googlefonts like: https://twitter.com/googlefonts/status/1415562928657416192.
-
-* Google Fonts uses Github Releases to manage font families. If you feel your font project has hit a milestone, you must create a new release for it. In order to do this, go to the releases page and hit the "Draft a new release button". You must provide a tag number and title which can only be a decimal number e.g 0.100, 1.000 etc. For the body text, mention what has changed since the last release. Once you are done, hit the "Publish release" button. Here is an example which fulfills the requirements, https://github.com/m4rc1e/test-ufr-family/releases/tag/2.019. For more info regarding Github release, please see the official Github Release [documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). **Please note that Github Actions must be able to build the fonts before you can make a release. Once you have made a release, the fonts and tests assets will be attached to the release automatically. This may take a while since the fonts and tests will be built from scratch so please be patient.**
-
-* Remove this section from the readme. :-)
-----
-
-
-# My Font
+# Inclusive Sans
 
 [![][Fontbakery]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
 [![][Universal]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
@@ -45,15 +13,40 @@ Unlike many open source distributors, Google Fonts is **curated**. Fonts shipped
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2FUniversal.json
 
-Description of your font goes here. We recommend to start with a very short presentation line (the kind you would use on twitter to present your project for example), and then add as much details as necesary :-) Origin of the project, idea of usage, concept of creation… but also number of masters, axes, character sets, etc.
-
-Don't hesitate to create images!
+Inclusive Sans is a text font designed for accessibility and readability. It is inspired by the friendly personality of contemporary neo-grotesques while incorporating key features to make it highly legible in all uses. 
 
 ![Sample Image](documentation/image1.png)
 
-## About
+## Background
 
-Description of you and/or organisation goes here.
+The conversation and guidelines around accessibility in typography has largely centred on type sizes and colour contrasts [1]. However research [2] has shown that accessibility in type is crucial at a character level, where key features can enhance the readability of text for those who are hard of seeing or are neurodiverse. 
+
+After reading Sophie Beier's book Reading Letters: Designing for Legibility [3], working with clients across in disability non-for-profits and large government organisations, as well as conversations with fellow designer Johanna Roca, Olivia King was inspired to create a typeface that was truly legible at a character level. While some typefaces had been created in the same spirit [4], she wanted to create a font that was more contemporary and usable as a text typeface for all types of use. 
+
+To meet the criteria as outlined in Beier's work as well as Gareth Ford William's Guide [5], Inclusive Sans incorporates the following key features:
+
+1. Clear distinction between I, l and 1
+2. Non-mirroring of letters d, b, q and p
+3. Distinction between O and 0
+4. Wider, more open counter forms on c, o, a and e
+5. A higher x-height for easier readability at small sizes
+6. Wider default letter-spacing 
+7. Clear difference between capital height and ascender height
+
+In early 2021 Olivia started work on the regular weight of Inclusive Sans while participating in a 10 week type design course run by Troy Leinster, and by August that year she had completed the majority of the full Latin set. Living and working on Gadigal Country (Sydney, Australia) she felt it was important to include support for Aboriginal and Torres Strait Islander languages. She added an additional 48 glyphs with the help of Vincent Chan (in consultation with Sasha Wilmouth from the University of Melbourne).
+
+Additional weights and styles are currently in development.
+
+---
+
+References:
+[1] See WCAG 2 section 1.4 on Distinguishable https://www.w3.org/WAI/WCAG21/quickref/#distinguishable
+[2] See Sophie Beier's 2009 thesis on typeface legibility
+[3] http://sofiebeier.dk/?page_id=390
+[4] https://www.myfonts.com/collections/fs-me-font-fontsmith
+[5] https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0
+
+
 
 ## Building
 
