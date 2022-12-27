@@ -17,6 +17,12 @@ Inclusive Sans is a text font designed for accessibility and readability. It is 
 
 
 ![Sample Image](documentation/InclusiveSans.jpg)
+![Sample Image](documentation/InclusiveSans2.jpg)
+![Sample Image](documentation/InclusiveSans3.jpg)
+![Sample Image](documentation/InclusiveSans4.jpg)
+![Sample Image](documentation/InclusiveSans5.jpg)
+![Sample Image](documentation/InclusiveSans6.jpg)
+![Sample Image](documentation/InclusiveSans7.jpg)
 
 
 
