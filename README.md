@@ -28,11 +28,11 @@ Inclusive Sans is a text font designed for accessibility and readability. It is 
 
 ## Background
 
-The conversation and guidelines around accessibility in typography has largely centred on type sizes and colour contrasts [1]. However research [2] has shown that accessibility in type is crucial at a character level, where key features can enhance the readability of text for those who are hard of seeing or are neurodiverse. 
+The conversation and guidelines around accessibility in typography has largely centred on type sizes and colour contrasts [^1]. However research [^2] has shown that accessibility in type is crucial at a character level, where key features can enhance the readability of text for those who are hard of seeing or are neurodiverse. 
 
-After reading Sophie Beier's book Reading Letters: Designing for Legibility [3], working with clients across in disability non-for-profits and large government organisations, as well as conversations with fellow designer Johanna Roca, Olivia King was inspired to create a typeface that was truly legible at a character level. While some typefaces had been created in the same spirit [4], she wanted to create a font that was more contemporary and usable as a text typeface for all types of use. 
+After reading Sophie Beier's book Reading Letters: Designing for Legibility [^3], working with clients across in disability non-for-profits and large government organisations, as well as conversations with fellow designer Johanna Roca, Olivia King was inspired to create a typeface that was truly legible at a character level. While some typefaces had been created in the same spirit [^4], she wanted to create a font that was more contemporary and usable as a text typeface for all types of use. 
 
-To meet the criteria as outlined in Beier's work as well as Gareth Ford William's Guide [5], Inclusive Sans incorporates the following key features:
+To meet the criteria as outlined in Beier's work as well as Gareth Ford William's Guide [^5], Inclusive Sans incorporates the following key features:
 
 1. Clear distinction between I, l and 1
 2. Non-mirroring of letters d, b, q and p
@@ -46,14 +46,12 @@ In early 2021 Olivia started work on the regular weight of Inclusive Sans while 
 
 Additional weights and styles are currently in development.
 
----
 
-References:
-[1] See WCAG 2 section 1.4 on Distinguishable https://www.w3.org/WAI/WCAG21/quickref/#distinguishable
-[2] See Sophie Beier's 2009 thesis on typeface legibility
-[3] http://sofiebeier.dk/?page_id=390
-[4] https://www.myfonts.com/collections/fs-me-font-fontsmith
-[5] https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0
+[^1]: See WCAG 2 section 1.4 on Distinguishable https://www.w3.org/WAI/WCAG21/quickref/#distinguishable
+[^2]: See Sophie Beier's 2009 thesis on typeface legibility
+[^3]: http://sofiebeier.dk/?page_id=390
+[^4]: https://www.myfonts.com/collections/fs-me-font-fontsmith
+[^5]: https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0
 
 
 
