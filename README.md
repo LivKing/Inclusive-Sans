@@ -1,18 +1,6 @@
 
 # Inclusive Sans
 
-[![][Fontbakery]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
-[![][Universal]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
-[![][GF Profile]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
-[![][Outline Correctness]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
-[![][Shaping]](https://LivKing.github.io/Inclusive-Sans/fontbakery/fontbakery-report.html)
-
-[Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2Foverall.json
-[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2FGoogleFonts.json
-[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
-[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2FShapingChecks.json
-[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLivKing%2FInclusive-Sans%2Fgh-pages%2Fbadges%2FUniversal.json
-
 Inclusive Sans is a text font designed for accessibility and readability. It is inspired by the friendly personality of contemporary neo-grotesques while incorporating key features to make it highly legible in all uses. 
 
 
