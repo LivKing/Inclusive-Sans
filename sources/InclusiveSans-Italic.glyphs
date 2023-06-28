@@ -371,6 +371,12 @@ sub gcommaaccent by gcommaaccent.ss01;
 sub gdotaccent by gdotaccent.ss01;
 sub gmacron by gmacron.ss01;
 ";
+labels = (
+{
+language = dflt;
+value = ss01;
+}
+);
 tag = ss01;
 }
 );
@@ -395,7 +401,7 @@ value = 1137;
 },
 {
 name = winDescent;
-value = 244;
+value = 404;
 },
 {
 name = hheaAscender;
@@ -15711,24 +15717,27 @@ unicode = 59;
 },
 {
 glyphname = ellipsis;
-lastChange = "2023-06-19 23:10:01 +0000";
+lastChange = "2023-06-28 12:02:14 +0000";
 layers = (
 {
 layerId = master01;
 shapes = (
 {
+pos = (230,0);
 ref = period;
 },
 {
+pos = (460,0);
 ref = period;
 },
 {
 ref = period;
 }
 );
-width = 309;
+width = 769;
 }
 );
+metricRight = period;
 unicode = 8230;
 },
 {
@@ -16114,7 +16123,7 @@ unicode = 8226;
 },
 {
 glyphname = asterisk;
-lastChange = "2023-06-28 08:28:04 +0000";
+lastChange = "2023-06-19 23:10:01 +0000";
 layers = (
 {
 layerId = master01;
@@ -20378,7 +20387,6 @@ instanceInterpolations = {
 master01 = 1;
 };
 isItalic = 1;
-linkStyle = Regular;
 name = Italic;
 }
 );

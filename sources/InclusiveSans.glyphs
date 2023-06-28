@@ -227,6 +227,7 @@ featurePrefixes = (
 {
 automatic = 1;
 code = "languagesystem DFLT dflt;
+languagesystem DFLT MAH;
 
 languagesystem latn dflt;
 languagesystem latn AZE;
@@ -254,7 +255,6 @@ feature ss01;
 tag = aalt;
 },
 {
-automatic = 1;
 code = "lookup ccmp_DFLT_1 {
 	lookupflag 0;
 	sub brevecomb acutecomb by brevecomb_acutecomb;
@@ -272,13 +272,19 @@ lookup ccmp_Other_1 {
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub i' @CombiningTopAccents by idotless;
 	sub j' @CombiningTopAccents by jdotless;
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
 } ccmp_Other_1;
 ";
 tag = ccmp;
 },
 {
 automatic = 1;
-code = "script latn;
+code = "language MAH;
+lookup locl_noScript_0 {
+	sub commaaccentcomb by commaaccentcomb.loclMAH;
+} locl_noScript_0;
+
+script latn;
 language AZE;
 lookup locl_latn_0 {
 	sub i by idotaccent;
@@ -371,6 +377,12 @@ sub gcommaaccent by gcommaaccent.ss01;
 sub gdotaccent by gdotaccent.ss01;
 sub gmacron by gmacron.ss01;
 ";
+labels = (
+{
+language = dflt;
+value = ss01;
+}
+);
 tag = ss01;
 }
 );
@@ -395,7 +407,7 @@ value = 1137;
 },
 {
 name = winDescent;
-value = 244;
+value = 404;
 },
 {
 name = hheaAscender;
@@ -5828,7 +5840,7 @@ unicode = 7808;
 },
 {
 glyphname = X;
-lastChange = "2023-06-19 23:10:01 +0000";
+lastChange = "2023-06-19 00:10:01 +0000";
 layers = (
 {
 layerId = master01;
@@ -15709,22 +15721,24 @@ unicode = 59;
 },
 {
 glyphname = ellipsis;
-lastChange = "2023-06-19 23:10:01 +0000";
+lastChange = "2023-06-28 12:01:43 +0000";
 layers = (
 {
 layerId = master01;
 shapes = (
 {
+pos = (230,0);
 ref = period;
 },
 {
+pos = (460,0);
 ref = period;
 },
 {
 ref = period;
 }
 );
-width = 309;
+width = 770;
 }
 );
 unicode = 8230;
@@ -17309,7 +17323,7 @@ unicode = 34;
 {
 color = 4;
 glyphname = quotesingle;
-lastChange = "2023-06-28 09:23:21 +0000";
+lastChange = "2023-06-28 08:28:04 +0000";
 layers = (
 {
 layerId = master01;
@@ -20104,7 +20118,7 @@ width = 420;
 {
 color = 4;
 glyphname = commaaccentcomb.loclMAH;
-lastChange = "2023-06-28 09:25:00 +0000";
+lastChange = "2023-06-28 08:28:04 +0000";
 layers = (
 {
 anchors = (
