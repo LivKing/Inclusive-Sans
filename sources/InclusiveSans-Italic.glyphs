@@ -254,7 +254,6 @@ feature ss01;
 tag = aalt;
 },
 {
-automatic = 1;
 code = "lookup ccmp_DFLT_1 {
 	lookupflag 0;
 	sub brevecomb acutecomb by brevecomb_acutecomb;
@@ -272,6 +271,7 @@ lookup ccmp_Other_1 {
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub i' @CombiningTopAccents by idotless;
 	sub j' @CombiningTopAccents by jdotless;
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
 } ccmp_Other_1;
 ";
 tag = ccmp;
@@ -440,6 +440,10 @@ pos = -12;
 },
 {
 pos = 712;
+},
+{
+over = -16;
+pos = 13;
 }
 );
 name = Italic;
@@ -6253,7 +6257,7 @@ width = 524;
 },
 {
 glyphname = Ncommaaccent.loclMAH;
-lastChange = "2023-06-28 09:21:44 +0000";
+lastChange = "2023-06-28 12:40:42 +0000";
 layers = (
 {
 layerId = master01;
@@ -6262,7 +6266,7 @@ shapes = (
 ref = N;
 },
 {
-pos = (75,-2);
+pos = (55,-2);
 ref = commaaccentcomb.loclMAH;
 }
 );
@@ -13098,7 +13102,7 @@ unicode = 380;
 },
 {
 glyphname = lcommaaccent.loclMAH;
-lastChange = "2023-06-26 00:28:45 +0000";
+lastChange = "2023-06-28 12:40:31 +0000";
 layers = (
 {
 layerId = master01;
@@ -13107,8 +13111,8 @@ shapes = (
 ref = l;
 },
 {
-pos = (-171,12);
-ref = commaaccentcomb;
+pos = (-157,-2);
+ref = cedillacomb;
 }
 );
 width = 258;
@@ -13117,7 +13121,7 @@ width = 258;
 },
 {
 glyphname = ncommaaccent.loclMAH;
-lastChange = "2023-06-26 00:28:45 +0000";
+lastChange = "2023-06-28 12:40:41 +0000";
 layers = (
 {
 layerId = master01;
@@ -13126,8 +13130,8 @@ shapes = (
 ref = n;
 },
 {
-pos = (5,12);
-ref = commaaccentcomb;
+pos = (-1,-2);
+ref = commaaccentcomb.loclMAH;
 }
 );
 width = 597;
@@ -20115,13 +20119,13 @@ width = 420;
 {
 color = 4;
 glyphname = commaaccentcomb.loclMAH;
-lastChange = "2023-06-28 08:38:05 +0000";
+lastChange = "2023-06-28 12:40:41 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
-pos = (255,2);
+pos = (275,2);
 }
 );
 layerId = master01;
@@ -20386,7 +20390,6 @@ instances = (
 instanceInterpolations = {
 master01 = 1;
 };
-isItalic = 1;
 name = Italic;
 }
 );
@@ -20450,6 +20453,9 @@ name = "Overshoot Base";
 },
 {
 name = "Overshoot Cap";
+},
+{
+type = "italic angle";
 }
 );
 properties = (
