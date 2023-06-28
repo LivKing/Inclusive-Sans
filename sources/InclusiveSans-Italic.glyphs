@@ -1,9 +1,6 @@
 {
 .appVersion = "3201";
 .formatVersion = 3;
-DisplayStrings = (
-"‚„“”‘’"
-);
 customParameters = (
 {
 disabled = 1;
