@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3208";
 .formatVersion = 3;
 customParameters = (
 {
@@ -452,7 +452,7 @@ pos = -12;
 pos = 712;
 }
 );
-name = Regular;
+name = Italic;
 visible = 1;
 }
 );
@@ -3150,8 +3150,7 @@ target = (0,0);
 type = Stem;
 },
 {
-place = (637, 53);
-place = (637, 53);
+place = (637,53);
 type = Stem;
 }
 );
@@ -5428,8 +5427,7 @@ target = (0,11);
 type = Stem;
 },
 {
-place = (472, 78);
-place = (472, 78);
+place = (472,78);
 type = Stem;
 }
 );
@@ -6604,36 +6602,30 @@ pos = (336,516);
 hints = (
 {
 horizontal = 1;
-place = (-47, 41);
-place = (-47, 41);
+place = (-47,41);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (204, 41);
-place = (204, 41);
+place = (204,41);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (477, 41);
-place = (477, 41);
+place = (477,41);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (-35, 60);
-place = (-35, 60);
+place = (-35,60);
 type = Stem;
 },
 {
-place = (21, 49);
-place = (21, 49);
+place = (21,49);
 type = Stem;
 },
 {
-place = (330, 49);
-place = (330, 49);
+place = (330,49);
 type = Stem;
 }
 );
@@ -8876,13 +8868,11 @@ target = (0,4);
 type = Stem;
 },
 {
-place = (57, 49);
-place = (57, 49);
+place = (57,49);
 type = Stem;
 },
 {
-place = (386, 49);
-place = (386, 49);
+place = (386,49);
 type = Stem;
 }
 );
@@ -9393,8 +9383,7 @@ layers = (
 hints = (
 {
 horizontal = 1;
-place = (-284, 59);
-place = (-284, 59);
+place = (-284,59);
 type = Stem;
 },
 {
@@ -9524,14 +9513,12 @@ pos = (206,512);
 hints = (
 {
 horizontal = 1;
-place = (-284, 59);
-place = (-284, 59);
+place = (-284,59);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (685, -185);
-place = (685, -185);
+place = (685,-185);
 target = (0,6);
 type = Stem;
 },
@@ -9613,8 +9600,7 @@ pos = (242,-12);
 );
 hints = (
 {
-place = (58, 49);
-place = (58, 49);
+place = (58,49);
 type = Stem;
 }
 );
@@ -12395,8 +12381,7 @@ pos = (174,-4);
 hints = (
 {
 horizontal = 1;
-place = (-35, 458);
-place = (-35, 458);
+place = (-35,458);
 target = (0,10);
 type = Stem;
 },
@@ -13811,24 +13796,20 @@ pos = (309,512);
 hints = (
 {
 horizontal = 1;
-place = (-47, 41);
-place = (-47, 41);
+place = (-47,41);
 type = Stem;
 },
 {
 horizontal = 1;
-place = (401, 41);
-place = (401, 41);
+place = (401,41);
 type = Stem;
 },
 {
-place = (422, 48);
-place = (422, 48);
+place = (422,48);
 type = Stem;
 },
 {
-place = (38, 49);
-place = (38, 49);
+place = (38,49);
 type = Stem;
 }
 );
@@ -18744,8 +18725,7 @@ target = (0,0);
 type = Stem;
 },
 {
-place = (1135, 53);
-place = (1135, 53);
+place = (1135,53);
 type = Stem;
 }
 );
@@ -19414,8 +19394,7 @@ layers = (
 hints = (
 {
 horizontal = 1;
-place = (86, 240);
-place = (86, 240);
+place = (86,240);
 target = (0,3);
 type = Stem;
 },
@@ -19610,8 +19589,7 @@ type = Stem;
 },
 {
 horizontal = 1;
-place = (214, 34);
-place = (214, 34);
+place = (214,34);
 type = Stem;
 },
 {
@@ -19637,14 +19615,12 @@ target = (1,2);
 type = Stem;
 },
 {
-place = (490, 111);
-place = (490, 111);
+place = (490,111);
 target = (0,2);
 type = Stem;
 },
 {
-place = (722, 41);
-place = (722, 41);
+place = (722,41);
 type = Stem;
 }
 );
@@ -21111,7 +21087,7 @@ instances = (
 instanceInterpolations = {
 master01 = 1;
 };
-name = Regular;
+name = Italic;
 }
 );
 kerningLTR = {
