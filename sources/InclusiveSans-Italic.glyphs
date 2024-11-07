@@ -28586,6 +28586,76 @@ width = 632;
 );
 },
 {
+color = 9;
+glyphname = ordfeminine;
+lastChange = "2024-11-07 17:10:13 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = a;
+}
+);
+width = 568;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = a;
+}
+);
+width = 609;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = a;
+}
+);
+width = 610;
+}
+);
+unicode = 170;
+},
+{
+color = 9;
+glyphname = ordmasculine;
+lastChange = "2024-11-07 17:10:13 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = o;
+}
+);
+width = 568;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = o;
+}
+);
+width = 580;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = o;
+}
+);
+width = 604;
+}
+);
+unicode = 186;
+},
+{
 glyphname = space;
 lastChange = "2024-09-27 10:38:51 +0000";
 layers = (
@@ -28603,6 +28673,46 @@ width = 200;
 }
 );
 unicode = 32;
+},
+{
+color = 9;
+glyphname = nbspace;
+lastChange = "2024-11-07 17:10:13 +0000";
+layers = (
+{
+layerId = m01;
+width = 201;
+},
+{
+layerId = m002;
+width = 200;
+},
+{
+layerId = m003;
+width = 200;
+}
+);
+metricWidth = space;
+unicode = 160;
+},
+{
+color = 9;
+glyphname = .notdef;
+lastChange = "2024-11-07 17:10:13 +0000";
+layers = (
+{
+layerId = m01;
+width = 600;
+},
+{
+layerId = m002;
+width = 600;
+},
+{
+layerId = m003;
+width = 600;
+}
+);
 },
 {
 glyphname = period;
