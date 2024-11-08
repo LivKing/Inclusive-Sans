@@ -453,6 +453,7 @@ pos = -12;
 pos = 712;
 },
 {
+pos = 10;
 }
 );
 name = "Light Italic";
@@ -522,6 +523,7 @@ pos = -12;
 pos = 712;
 },
 {
+pos = 10;
 }
 );
 name = Italic;
@@ -592,6 +594,7 @@ pos = -12;
 pos = 712;
 },
 {
+pos = 10;
 }
 );
 name = "Bold Italic";
@@ -8306,7 +8309,7 @@ layers = (
 layerId = m01;
 shapes = (
 {
-pos = (663,0);
+pos = (575,0);
 ref = C;
 scale = (-1,1);
 }
@@ -8317,7 +8320,7 @@ width = 663;
 layerId = m002;
 shapes = (
 {
-pos = (689,0);
+pos = (601,0);
 ref = C;
 scale = (-1,1);
 }
@@ -8328,7 +8331,7 @@ width = 689;
 layerId = m003;
 shapes = (
 {
-pos = (684,0);
+pos = (594,0);
 ref = C;
 scale = (-1,1);
 }
@@ -21559,7 +21562,7 @@ layers = (
 layerId = m01;
 shapes = (
 {
-pos = (518,0);
+pos = (430,0);
 ref = c;
 scale = (-1,1);
 }
@@ -21570,7 +21573,7 @@ width = 518;
 layerId = m002;
 shapes = (
 {
-pos = (536,0);
+pos = (448,0);
 ref = c;
 scale = (-1,1);
 }
@@ -21581,7 +21584,7 @@ width = 536;
 layerId = m003;
 shapes = (
 {
-pos = (550,0);
+pos = (460,0);
 ref = c;
 scale = (-1,1);
 }
@@ -45642,6 +45645,7 @@ name = "Overshoot Base";
 name = "Overshoot Cap";
 },
 {
+type = "italic angle";
 }
 );
 properties = (
