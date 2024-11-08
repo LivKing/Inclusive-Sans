@@ -1,9 +1,6 @@
 {
 .appVersion = "3324";
 .formatVersion = 3;
-DisplayStrings = (
-w
-);
 axes = (
 {
 name = Weight;
@@ -410,7 +407,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1137;
+value = 1150;
 },
 {
 name = winDescent;
@@ -480,7 +477,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1137;
+value = 1150;
 },
 {
 name = winDescent;
@@ -549,7 +546,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1137;
+value = 1150;
 },
 {
 name = winDescent;
@@ -6860,6 +6857,41 @@ width = 699;
 }
 );
 unicode = 7750;
+},
+{
+color = 9;
+glyphname = Nhookleft;
+lastChange = "2024-11-08 09:14:47 +0000";
+layers = (
+{
+guides = (
+{
+pos = (184,-165);
+}
+);
+layerId = m003;
+width = 666;
+},
+{
+guides = (
+{
+pos = (562,-133);
+}
+);
+layerId = m01;
+width = 609;
+},
+{
+guides = (
+{
+pos = (311,-142);
+}
+);
+layerId = m002;
+width = 617;
+}
+);
+unicode = 413;
 },
 {
 glyphname = Nmacronbelow;
