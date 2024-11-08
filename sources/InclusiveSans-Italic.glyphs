@@ -228,11 +228,11 @@ value = (
 }
 );
 date = "2024-11-02 04:16:01 +0000";
-familyName = "Inclusive Sans Italic";
+familyName = "Inclusive Sans";
 featurePrefixes = (
 {
+automatic = 1;
 code = "languagesystem DFLT dflt;
-languagesystem DFLT MAH;
 
 languagesystem latn dflt;
 languagesystem latn AZE;
@@ -251,15 +251,23 @@ name = Languagesystems;
 );
 features = (
 {
+automatic = 1;
 code = "feature locl;
-feature ordn;
 feature case;
 feature ss01;
 ";
 tag = aalt;
 },
 {
+automatic = 1;
 code = "lookup ccmp_DFLT_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_DFLT_2 {
 	lookupflag 0;
 	sub brevecomb acutecomb by brevecomb_acutecomb;
 	sub brevecomb gravecomb by brevecomb_gravecomb;
@@ -269,29 +277,22 @@ code = "lookup ccmp_DFLT_1 {
 	sub circumflexcomb gravecomb by circumflexcomb_gravecomb;
 	sub circumflexcomb hookabovecomb by circumflexcomb_hookabovecomb;
 	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
-} ccmp_DFLT_1;
+} ccmp_DFLT_2;
 
-lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb dotbelowcomb macronbelowcomb ogonekcomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-	sub idotbelow' @CombiningTopAccents by idotless dotbelowcomb;
-	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
-	sub idotbelow' @CombiningNonTopAccents @CombiningTopAccents by idotless dotbelowcomb;
-	sub iogonek' @CombiningNonTopAccents @CombiningTopAccents by idotless ogonekcomb;
-} ccmp_Other_1;
+lookup ccmp_latn_1 {
+	lookupflag 0;
+	sub Ldot by L periodcentered.loclCAT.case;
+	sub ldot by l periodcentered.loclCAT;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
 ";
 tag = ccmp;
 },
 {
-code = "language MAH;
-lookup locl_noScript_0 {
-	sub commaaccentcomb by commaaccentcomb.loclMAH;
-} locl_noScript_0;
-
-script latn;
+automatic = 1;
+code = "script latn;
 language AZE;
 lookup locl_latn_0 {
 	sub i by idotaccent;
@@ -323,6 +324,7 @@ lookup locl_latn_2 {
 	sub Ncommaaccent by Ncommaaccent.loclMAH;
 	sub lcommaaccent by lcommaaccent.loclMAH;
 	sub ncommaaccent by ncommaaccent.loclMAH;
+	sub commaaccentcomb by commaaccentcomb.loclMAH;
 } locl_latn_2;
 
 script latn;
@@ -522,7 +524,7 @@ pos = 712;
 {
 }
 );
-name = "Regular Italic";
+name = Italic;
 visible = 1;
 },
 {
@@ -24962,7 +24964,7 @@ unicode = 118;
 },
 {
 glyphname = w;
-lastChange = "2024-11-02 04:49:56 +0000";
+lastChange = "2024-11-08 08:57:27 +0000";
 layers = (
 {
 anchors = (
@@ -24994,22 +24996,22 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(597,0,l),
-(537,0,l),
-(426,473,l),
-(450,473,l),
 (242,0,l),
-(181,0,l),
-(66,500,l),
-(134,500,l),
-(227,61,l),
-(213,61,l),
-(403,500,l),
-(481,500,l),
-(582,61,l),
-(569,61,l),
+(450,473,l),
+(426,473,l),
+(537,0,l),
+(597,0,l),
+(816,500,l),
 (753,500,l),
-(816,500,l)
+(569,61,l),
+(582,61,l),
+(481,500,l),
+(403,500,l),
+(213,61,l),
+(227,61,l),
+(134,500,l),
+(66,500,l),
+(181,0,l)
 );
 }
 );
@@ -25031,7 +25033,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(179,0,l),
 (269,0,l),
 (463,420,l),
 (427,420,l),
@@ -25046,7 +25047,8 @@ nodes = (
 (224,62,l),
 (243,62,l),
 (157,500,l),
-(62,500,l)
+(62,500,l),
+(179,0,l)
 );
 }
 );
@@ -25068,7 +25070,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(180,0,l),
 (317,0,l),
 (490,408,l),
 (461,408,l),
@@ -25083,7 +25084,8 @@ nodes = (
 (254,95,l),
 (278,95,l),
 (205,508,l),
-(59,508,l)
+(59,508,l),
+(180,0,l)
 );
 }
 );
@@ -44619,8 +44621,7 @@ instanceInterpolations = {
 m01 = 1;
 };
 isItalic = 1;
-linkStyle = Light;
-name = Light;
+name = "Light Italic";
 weightClass = 300;
 },
 {
@@ -44630,8 +44631,32 @@ axesValues = (
 instanceInterpolations = {
 m002 = 1;
 };
-linkStyle = Regular;
-name = Regular;
+isItalic = 1;
+name = Italic;
+},
+{
+axesValues = (
+500
+);
+instanceInterpolations = {
+m002 = 0.66667;
+m003 = 0.33333;
+};
+isItalic = 1;
+name = "Medium Italic";
+weightClass = 500;
+},
+{
+axesValues = (
+600
+);
+instanceInterpolations = {
+m002 = 0.33333;
+m003 = 0.66667;
+};
+isItalic = 1;
+name = "SemiBold Italic";
+weightClass = 600;
 },
 {
 axesValues = (
@@ -44640,8 +44665,9 @@ axesValues = (
 instanceInterpolations = {
 m003 = 1;
 };
-linkStyle = Bold;
-name = Bold;
+isBold = 1;
+isItalic = 1;
+name = "Bold Italic";
 weightClass = 700;
 }
 );
@@ -45646,13 +45672,13 @@ key = licenses;
 values = (
 {
 language = ENG;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 },
 {
 key = manufacturers;

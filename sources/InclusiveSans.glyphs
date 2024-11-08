@@ -231,8 +231,8 @@ date = "2024-11-02 04:16:01 +0000";
 familyName = "Inclusive Sans ";
 featurePrefixes = (
 {
+automatic = 1;
 code = "languagesystem DFLT dflt;
-languagesystem DFLT MAH;
 
 languagesystem latn dflt;
 languagesystem latn AZE;
@@ -251,15 +251,23 @@ name = Languagesystems;
 );
 features = (
 {
+automatic = 1;
 code = "feature locl;
-feature ordn;
 feature case;
 feature ss01;
 ";
 tag = aalt;
 },
 {
+automatic = 1;
 code = "lookup ccmp_DFLT_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_DFLT_2 {
 	lookupflag 0;
 	sub brevecomb acutecomb by brevecomb_acutecomb;
 	sub brevecomb gravecomb by brevecomb_gravecomb;
@@ -269,29 +277,22 @@ code = "lookup ccmp_DFLT_1 {
 	sub circumflexcomb gravecomb by circumflexcomb_gravecomb;
 	sub circumflexcomb hookabovecomb by circumflexcomb_hookabovecomb;
 	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
-} ccmp_DFLT_1;
+} ccmp_DFLT_2;
 
-lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb dotbelowcomb macronbelowcomb ogonekcomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-	sub idotbelow' @CombiningTopAccents by idotless dotbelowcomb;
-	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
-	sub idotbelow' @CombiningNonTopAccents @CombiningTopAccents by idotless dotbelowcomb;
-	sub iogonek' @CombiningNonTopAccents @CombiningTopAccents by idotless ogonekcomb;
-} ccmp_Other_1;
+lookup ccmp_latn_1 {
+	lookupflag 0;
+	sub Ldot by L periodcentered.loclCAT.case;
+	sub ldot by l periodcentered.loclCAT;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
 ";
 tag = ccmp;
 },
 {
-code = "language MAH;
-lookup locl_noScript_0 {
-	sub commaaccentcomb by commaaccentcomb.loclMAH;
-} locl_noScript_0;
-
-script latn;
+automatic = 1;
+code = "script latn;
 language AZE;
 lookup locl_latn_0 {
 	sub i by idotaccent;
@@ -323,6 +324,7 @@ lookup locl_latn_2 {
 	sub Ncommaaccent by Ncommaaccent.loclMAH;
 	sub lcommaaccent by lcommaaccent.loclMAH;
 	sub ncommaaccent by ncommaaccent.loclMAH;
+	sub commaaccentcomb by commaaccentcomb.loclMAH;
 } locl_latn_2;
 
 script latn;
@@ -6203,7 +6205,7 @@ shapes = (
 ref = L;
 },
 {
-pos = (239,-27);
+pos = (84,192);
 ref = caroncomb.alt;
 }
 );
@@ -28065,6 +28067,76 @@ width = 632;
 );
 },
 {
+color = 9;
+glyphname = ordfeminine;
+lastChange = "2024-11-07 17:22:07 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = a;
+}
+);
+width = 568;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = a;
+}
+);
+width = 609;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = a;
+}
+);
+width = 610;
+}
+);
+unicode = 170;
+},
+{
+color = 9;
+glyphname = ordmasculine;
+lastChange = "2024-11-07 17:22:07 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = o;
+}
+);
+width = 568;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = o;
+}
+);
+width = 580;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = o;
+}
+);
+width = 604;
+}
+);
+unicode = 186;
+},
+{
 glyphname = space;
 lastChange = "2024-09-27 10:38:51 +0000";
 layers = (
@@ -28082,6 +28154,46 @@ width = 200;
 }
 );
 unicode = 32;
+},
+{
+color = 9;
+glyphname = nbspace;
+lastChange = "2024-11-07 17:22:07 +0000";
+layers = (
+{
+layerId = m01;
+width = 201;
+},
+{
+layerId = m002;
+width = 200;
+},
+{
+layerId = m003;
+width = 200;
+}
+);
+metricWidth = space;
+unicode = 160;
+},
+{
+color = 9;
+glyphname = .notdef;
+lastChange = "2024-11-07 17:22:07 +0000";
+layers = (
+{
+layerId = m01;
+width = 600;
+},
+{
+layerId = m002;
+width = 600;
+},
+{
+layerId = m003;
+width = 600;
+}
+);
 },
 {
 glyphname = period;
@@ -43948,11 +44060,34 @@ name = Regular;
 },
 {
 axesValues = (
+500
+);
+instanceInterpolations = {
+m002 = 0.66667;
+m003 = 0.33333;
+};
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
+600
+);
+instanceInterpolations = {
+m002 = 0.33333;
+m003 = 0.66667;
+};
+name = SemiBold;
+weightClass = 600;
+},
+{
+axesValues = (
 700
 );
 instanceInterpolations = {
 m003 = 1;
 };
+isBold = 1;
 name = Bold;
 weightClass = 700;
 }
@@ -44958,13 +45093,13 @@ key = licenses;
 values = (
 {
 language = ENG;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 },
 {
 key = manufacturers;
