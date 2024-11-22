@@ -10,7 +10,7 @@ fontbakery version: 0.13.0a3
 
 
 
-<details><summary>[19] InclusiveSans-Italic[wght].ttf</summary>
+<details><summary>[20] InclusiveSans-Italic[wght].ttf</summary>
 <div>
 <details>
     <summary>💥 <b>ERROR</b> Check if the axes match between the font and the Google Fonts version. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/vendorspecific.googlefonts.varfont.html#"></a></summary>
@@ -66,6 +66,24 @@ fontbakery version: 0.13.0a3
 </details>
 
 <details>
+    <summary>🔥 <b>FAIL</b> Space and non-breaking space have the same width? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/some_other_checks.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Space and non-breaking space have differing width: The space glyph named space is 200 font units wide, non-breaking space named (uni00A0) is 600 font units wide, and both should be positive and the same. GlyphsApp has &quot;Sidebearing arithmetic&quot; (<a href="https://glyphsapp.com/tutorials/spacing">https://glyphsapp.com/tutorials/spacing</a>) which allows you to set the non-breaking space width to always equal the space width.</p>
+ [code: different-widths]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Check accent of Lcaron, dcaron, lcaron, tcaron <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/some_other_checks.html#"></a></summary>
     <div>
 
@@ -106,29 +124,14 @@ fontbakery version: 0.13.0a3
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 0 start point differs in glyph 'M' between location wght=400 and location wght=300
+<pre><code>- Contour 0 start point differs in glyph 'uni0326.loclMAH' between location wght=400 and location wght=300
 
-- Contour 0 in glyph 'M': becomes underweight between wght=400 and wght=300.
+- Contour 0 in glyph 'uni0326.loclMAH': becomes underweight between wght=400 and wght=300.
 
-- Contour 0 start point differs in glyph 'M' between location wght=300 and location wght=700
+- Contour 0 start point differs in glyph 'uni0326.loclMAH' between location wght=300 and location wght=700
 
-- Contour 0 in glyph 'M': becomes underweight between wght=300 and wght=700.
-
-- Contour 0 start point differs in glyph 'plusminus' between location wght=300 and location wght=700
-
-- Contour 0 in glyph 'plusminus': becomes underweight between wght=300 and wght=700.
-
-- Contour 0 start point differs in glyph 'uni0312' between location wght=400 and location wght=300
-
-- Contour 0 in glyph 'uni0312': becomes underweight between wght=400 and wght=300.
-
-- Contour 0 start point differs in glyph 'uni0312' between location wght=300 and location wght=700
-
-- Contour 0 in glyph 'uni0312': becomes underweight between wght=300 and wght=700.
-
-- 165 more.
+- Contour 0 in glyph 'uni0326.loclMAH': becomes underweight between wght=300 and wght=700.
 </code></pre>
-<p>Use -F or --full-lists to disable shortening of long lists.</p>
  [code: interpolation-issues]
 
 
@@ -167,9 +170,9 @@ fontbakery version: 0.13.0a3
 * ⚠️ **WARN** <p>The most common width is 573 among a set of 3 math glyphs.
 The following math glyphs have a different width, though:</p>
 <p>Width = 614:
-equal, plus</p>
+plus, equal</p>
 <p>Width = 552:
-less, greater</p>
+greater, less</p>
 <p>Width = 556:
 multiply</p>
  [code: width-outliers]
@@ -213,14 +216,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, syriac, tifinagh, tai-le, math, malayalam</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, old-permic, tai-le, coptic, math, canadian-aboriginal, tifinagh, syriac</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 18 more.</li>
@@ -264,8 +267,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ị̀ ị́ ị̂ ị̃ ị̄</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̉ į̊ į̋ į̒ į̛̀ į̛́ į̛̂ į̛̃ į̛̄ į̛̆ į̛̇ į̛̈ į̛̉ į̛̊ į̛̋ į̛̌ į̛̒</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Ekpeye (Latn, 226,000 speakers), Ejagham (Latn, 120,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Southern Kisi (Latn, 360,000 speakers), Nateni (Latn, 100,000 speakers), Sar (Latn, 500,000 speakers), Dii (Latn, 71,000 speakers), Fur (Latn, 1,230,163 speakers), Ebira (Latn, 2,200,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Dan (Latn, 1,099,244 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Basaa (Latn, 332,940 speakers), Ngbaka (Latn, 1,020,000 speakers), Lugbara (Latn, 2,200,000 speakers), Avokaya (Latn, 100,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Makaa (Latn, 221,000 speakers), Igbo (Latn, 27,823,640 speakers), Koonzime (Latn, 40,000 speakers), Zapotec (Latn, 490,000 speakers), Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Aghem (Latn, 38,843 speakers), South Central Banda (Latn, 244,000 speakers), Gulay (Latn, 250,478 speakers), Bafut (Latn, 158,146 speakers), Ma’di (Latn, 584,000 speakers), Vute (Latn, 21,000 speakers), Mundani (Latn, 34,000 speakers), Cicipu (Latn, 44,000 speakers), Yala (Latn, 200,000 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Ebira (Latn, 2,200,000 speakers), Dutch (Latn, 31,709,104 speakers), Ekpeye (Latn, 226,000 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mango (Latn, 77,000 speakers), South Central Banda (Latn, 244,000 speakers), Kom (Latn, 360,685 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ma’di (Latn, 584,000 speakers), Aghem (Latn, 38,843 speakers), Vute (Latn, 21,000 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Lugbara (Latn, 2,200,000 speakers), Cicipu (Latn, 44,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Basaa (Latn, 332,940 speakers), Dan (Latn, 1,099,244 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Gulay (Latn, 250,478 speakers), Yala (Latn, 200,000 speakers), Navajo (Latn, 166,319 speakers), Fur (Latn, 1,230,163 speakers), Mfumte (Latn, 79,000 speakers), Avokaya (Latn, 100,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ngbaka (Latn, 1,020,000 speakers), Zapotec (Latn, 490,000 speakers), Southern Kisi (Latn, 360,000 speakers), Bafut (Latn, 158,146 speakers), Dii (Latn, 71,000 speakers), Nzakara (Latn, 50,000 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Ejagham (Latn, 120,000 speakers), Makaa (Latn, 221,000 speakers), Igbo (Latn, 27,823,640 speakers).</p>
  [code: soft-dotted]
 
 
@@ -348,11 +351,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">89.4kb</td>
+<td align="right">89.7kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">89.4kb</td>
+<td align="right">89.7kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -471,7 +474,7 @@ flag = 0x0F
 
 
 
-* ℹ️ **INFO** <p>Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.000']</p>
+* ℹ️ **INFO** <p>Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.001']</p>
  [code: version-not-detected]
 
 
@@ -481,7 +484,7 @@ flag = 0x0F
 </div>
 </details>
 
-<details><summary>[19] InclusiveSans[wght].ttf</summary>
+<details><summary>[20] InclusiveSans[wght].ttf</summary>
 <div>
 <details>
     <summary>💥 <b>ERROR</b> Check if the axes match between the font and the Google Fonts version. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/vendorspecific.googlefonts.varfont.html#"></a></summary>
@@ -537,6 +540,24 @@ flag = 0x0F
 </details>
 
 <details>
+    <summary>🔥 <b>FAIL</b> Space and non-breaking space have the same width? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/some_other_checks.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>Space and non-breaking space have differing width: The space glyph named space is 200 font units wide, non-breaking space named (uni00A0) is 600 font units wide, and both should be positive and the same. GlyphsApp has &quot;Sidebearing arithmetic&quot; (<a href="https://glyphsapp.com/tutorials/spacing">https://glyphsapp.com/tutorials/spacing</a>) which allows you to set the non-breaking space width to always equal the space width.</p>
+ [code: different-widths]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Check accent of Lcaron, dcaron, lcaron, tcaron <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/some_other_checks.html#"></a></summary>
     <div>
 
@@ -577,27 +598,27 @@ flag = 0x0F
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 0 start point differs in glyph 'M' between location wght=400 and location wght=300
+<pre><code>- Contour order differs in glyph 'yen': [0, 1, 2] in wght=300, [0, 2, 1] in wght=700.
 
-- Contour 0 in glyph 'M': becomes underweight between wght=400 and wght=300.
+- Contour order differs in glyph 'divide': [0, 1, 2] in wght=300, [1, 0, 2] in wght=700.
 
-- Contour 0 start point differs in glyph 'M' between location wght=300 and location wght=700
+- Contour order differs in glyph 'quotedbl': [0, 1] in wght=400, [1, 0] in wght=300.
 
-- Contour 0 in glyph 'M': becomes underweight between wght=300 and wght=700.
+- Contour order differs in glyph 'quotedbl': [0, 1] in wght=300, [1, 0] in wght=700.
 
-- Contour 0 start point differs in glyph 'plusminus' between location wght=300 and location wght=700
+- Contour 0 start point differs in glyph 'uni0326.loclMAH' between location wght=400 and location wght=300
 
-- Contour 0 in glyph 'plusminus': becomes underweight between wght=300 and wght=700.
+- Contour 0 in glyph 'uni0326.loclMAH': becomes underweight between wght=400 and wght=300.
 
-- Contour 0 start point differs in glyph 'uni0312' between location wght=400 and location wght=300
+- Contour 0 start point differs in glyph 'uni0326.loclMAH' between location wght=300 and location wght=700
 
-- Contour 0 in glyph 'uni0312': becomes underweight between wght=400 and wght=300.
+- Contour 0 in glyph 'uni0326.loclMAH': becomes underweight between wght=300 and wght=700.
 
-- Contour 0 start point differs in glyph 'uni0312' between location wght=300 and location wght=700
+- Contour 0 start point differs in glyph 'uni030C' between location wght=300 and location wght=700
 
-- Contour 0 in glyph 'uni0312': becomes underweight between wght=300 and wght=700.
+- Contour 0 in glyph 'uni030C': becomes underweight between wght=300 and wght=700.
 
-- 165 more.
+- 6 more.
 </code></pre>
 <p>Use -F or --full-lists to disable shortening of long lists.</p>
  [code: interpolation-issues]
@@ -638,9 +659,9 @@ flag = 0x0F
 * ⚠️ **WARN** <p>The most common width is 573 among a set of 3 math glyphs.
 The following math glyphs have a different width, though:</p>
 <p>Width = 614:
-equal, plus</p>
+plus, equal</p>
 <p>Width = 552:
-less, greater</p>
+greater, less</p>
 <p>Width = 556:
 multiply</p>
  [code: width-outliers]
@@ -684,14 +705,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, syriac, tifinagh, tai-le, math, malayalam</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, old-permic, tai-le, coptic, math, canadian-aboriginal, tifinagh, syriac</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 18 more.</li>
@@ -735,8 +756,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ ị̀ ị́ ị̂ ị̃ ị̄</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̉ į̊ į̋ į̒ į̛̀ į̛́ į̛̂ į̛̃ į̛̄ į̛̆ į̛̇ į̛̈ į̛̉ į̛̊ į̛̋ į̛̌ į̛̒</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Ekpeye (Latn, 226,000 speakers), Ejagham (Latn, 120,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Southern Kisi (Latn, 360,000 speakers), Nateni (Latn, 100,000 speakers), Sar (Latn, 500,000 speakers), Dii (Latn, 71,000 speakers), Fur (Latn, 1,230,163 speakers), Ebira (Latn, 2,200,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Dan (Latn, 1,099,244 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Basaa (Latn, 332,940 speakers), Ngbaka (Latn, 1,020,000 speakers), Lugbara (Latn, 2,200,000 speakers), Avokaya (Latn, 100,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Makaa (Latn, 221,000 speakers), Igbo (Latn, 27,823,640 speakers), Koonzime (Latn, 40,000 speakers), Zapotec (Latn, 490,000 speakers), Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Aghem (Latn, 38,843 speakers), South Central Banda (Latn, 244,000 speakers), Gulay (Latn, 250,478 speakers), Bafut (Latn, 158,146 speakers), Ma’di (Latn, 584,000 speakers), Vute (Latn, 21,000 speakers), Mundani (Latn, 34,000 speakers), Cicipu (Latn, 44,000 speakers), Yala (Latn, 200,000 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mango (Latn, 77,000 speakers), South Central Banda (Latn, 244,000 speakers), Kom (Latn, 360,685 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ma’di (Latn, 584,000 speakers), Aghem (Latn, 38,843 speakers), Vute (Latn, 21,000 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Lugbara (Latn, 2,200,000 speakers), Cicipu (Latn, 44,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Basaa (Latn, 332,940 speakers), Dan (Latn, 1,099,244 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Gulay (Latn, 250,478 speakers), Yala (Latn, 200,000 speakers), Navajo (Latn, 166,319 speakers), Fur (Latn, 1,230,163 speakers), Ebira (Latn, 2,200,000 speakers), Mfumte (Latn, 79,000 speakers), Avokaya (Latn, 100,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ngbaka (Latn, 1,020,000 speakers), Zapotec (Latn, 490,000 speakers), Southern Kisi (Latn, 360,000 speakers), Ekpeye (Latn, 226,000 speakers), Bafut (Latn, 158,146 speakers), Dii (Latn, 71,000 speakers), Nzakara (Latn, 50,000 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Ejagham (Latn, 120,000 speakers), Makaa (Latn, 221,000 speakers), Igbo (Latn, 27,823,640 speakers).</p>
  [code: soft-dotted]
 
 
@@ -819,11 +840,11 @@ definitions.</p>
 <tbody>
 <tr>
 <td align="left">Dehinted Size</td>
-<td align="right">87.0kb</td>
+<td align="right">86.4kb</td>
 </tr>
 <tr>
 <td align="left">Hinted Size</td>
-<td align="right">87.0kb</td>
+<td align="right">86.4kb</td>
 </tr>
 <tr>
 <td align="left">Increase</td>
@@ -942,7 +963,7 @@ flag = 0x0F
 
 
 
-* ℹ️ **INFO** <p>Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.000']</p>
+* ℹ️ **INFO** <p>Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.001']</p>
  [code: version-not-detected]
 
 
@@ -984,8 +1005,8 @@ flag = 0x0F
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 2 | 0 | 2 | 20 | 189 | 15 | 260 | 0 | 
-| 0% | 0% | 0% | 4% | 39% | 3% | 53% | 0% | 
+| 2 | 0 | 4 | 20 | 189 | 15 | 258 | 0 | 
+| 0% | 0% | 1% | 4% | 39% | 3% | 53% | 0% | 
 
 
 
