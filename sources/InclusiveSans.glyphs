@@ -1,6 +1,9 @@
 {
-.appVersion = "3326";
+.appVersion = "3260";
 .formatVersion = 3;
+DisplayStrings = (
+"rř"
+);
 axes = (
 {
 name = Weight;
@@ -22309,7 +22312,7 @@ unicode = 113;
 },
 {
 glyphname = r;
-lastChange = "2025-01-01 06:46:10 +0000";
+lastChange = "2025-02-21 05:17:28 +0000";
 layers = (
 {
 anchors = (
@@ -22319,7 +22322,7 @@ pos = (125,0);
 },
 {
 name = top;
-pos = (216,500);
+pos = (203,500);
 }
 );
 layerId = m01;
@@ -22358,7 +22361,7 @@ pos = (136,0);
 },
 {
 name = top;
-pos = (136,500);
+pos = (214,500);
 }
 );
 layerId = m002;
@@ -22397,7 +22400,7 @@ pos = (149,0);
 },
 {
 name = top;
-pos = (221,520);
+pos = (237,520);
 }
 );
 layerId = m003;
@@ -22442,7 +22445,7 @@ shapes = (
 ref = r;
 },
 {
-pos = (166,-12);
+pos = (153,-12);
 ref = acutecomb;
 }
 );
@@ -22455,7 +22458,7 @@ shapes = (
 ref = r;
 },
 {
-pos = (102,-12);
+pos = (180,-12);
 ref = acutecomb;
 }
 );
@@ -22468,7 +22471,7 @@ shapes = (
 ref = r;
 },
 {
-pos = (160,12);
+pos = (176,12);
 ref = acutecomb;
 }
 );
@@ -22479,7 +22482,7 @@ unicode = 341;
 },
 {
 glyphname = rcaron;
-lastChange = "2024-10-21 04:16:12 +0000";
+lastChange = "2025-02-21 05:17:28 +0000";
 layers = (
 {
 layerId = m01;
@@ -22488,7 +22491,7 @@ shapes = (
 ref = r;
 },
 {
-pos = (82,-12);
+pos = (69,-12);
 ref = caroncomb;
 }
 );
@@ -22501,7 +22504,7 @@ shapes = (
 ref = r;
 },
 {
-pos = (-16,-12);
+pos = (62,-12);
 ref = caroncomb;
 }
 );
@@ -22514,7 +22517,7 @@ shapes = (
 ref = r;
 },
 {
-pos = (40,12);
+pos = (60,12);
 ref = caroncomb;
 }
 );
@@ -47910,5 +47913,5 @@ tH = "50";
 };
 };
 versionMajor = 2;
-versionMinor = 4;
+versionMinor = 5;
 }
